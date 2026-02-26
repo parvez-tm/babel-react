@@ -1,8 +1,16 @@
 {
   "scripts": {
-    "start": "servor --reload"
+    "start": "servor --reload",
+    "build": "babel ./script.js -d lib --source-maps"
   },
   "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "servor": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-react": "^7.28.5"
   }
 }

@@ -9,11 +9,18 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="babel.js"></script>
+
+    <!-- We will get error if use local files  -->
+    <!-- <script src="babel.js"></script> -->
     <script src="React.js"></script>
     <script src="ReactDOM.js"></script>
+
     <!-- Must do text/babel so that babel can convert the code in React -->
-    <script type="text/babel" src="script.js"></script>
+    <!-- <script type="text/babel" src="script.js"></script> -->
+
+    <!-- For CLI  -->
+    <!-- defer to load this file last -->
+    <script src="lib/script.js" defer></script>
   </head>
   <body>
     <div id="root"></div>
